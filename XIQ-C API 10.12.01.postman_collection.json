@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "bdf56732-6d64-4e7e-86a3-fa63c5b0a79d",
-		"name": "XIQ-C API 10.05.02",
+		"_postman_id": "16285205-9806-4f81-af02-0db6ed74f441",
+		"name": "XIQ-C API 10.12.01",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "4056946",
-		"_collection_link": "https://gold-escape-604608.postman.co/workspace/XIQ-C-Workspace~a908515a-7140-42a8-9e59-91663cf86450/collection/4056946-bdf56732-6d64-4e7e-86a3-fa63c5b0a79d?action=share&creator=4056946&source=collection_link"
+		"_collection_link": "https://gold-escape-604608.postman.co/workspace/XIQ-C-Workspace~a908515a-7140-42a8-9e59-91663cf86450/collection/4056946-16285205-9806-4f81-af02-0db6ed74f441?action=share&source=collection_link&creator=4056946"
 	},
 	"item": [
 		{
@@ -1058,6 +1058,14 @@
 								"v1",
 								"aps",
 								"platforms"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": null,
+									"description": "string (Country)\nEnum: \"AFGHANISTAN\" \"ALBANIA\" \"ALGERIA\" \"AMERICAN_SAMOA\" \"ANDORRA\" \"ANGOLA\" \"ANGUILLA\" \"ANTARCTICA\" \"ANTIGUA_BARBUDA\" \"ARGENTINA\" \"ARMENIA\" \"ARUBA\" \"AUSTRALIA\" \"AUSTRIA\" \"AZERBAIJAN\" \"BAHAMAS\" \"BAHRAIN\" \"BANGLADESH\" \"BARBADOS\" \"BELARUS\" \"BELGIUM\" \"BELIZE\" \"BENIN\" \"BERMUDA\" \"BHUTAN\" \"BOLIVIA\" \"BONAIRE_SINT_EUSTATIUS_AND_SABA\" \"BOSNIA_HERZEGOVINA\" \"BOTSWANA\" \"BOUVET_ISLAND\" \"BRAZIL\" \"BRITISH_INDIAN_OCEAN_TERRITORY\" \"BRUNEI_DARUSSALAM\" \"BULGARIA\" \"BURKINA_FASO\" \"BURUNDI\" \"CAMBODIA\" \"CAMEROON\" \"CANADA\" \"CAPE_VERDE\" \"CAYMAN_ISLANDS\" \"CENTRAL_AFRICAN_REPUBLIC\" \"CHAD\" \"CHILE\" \"CHINA\" \"CHRISTMAS_ISLAND\" \"COCOS_KEELING_ISLANDS\" \"COLOMBIA\" \"COMOROS\" \"CONGO\" \"CONGO_THE_DRC\" \"COOK_ISLANDS\" \"COSTA_RICA\" \"IVORY_COAST\" \"CROATIA\" \"CUBA\" \"CURACAO\" \"CYPRUS\" \"CZECH\" \"DENMARK\" \"DJIBOUTI\" \"DOMINICA\" \"DOMINICAN\" \"EAST_TIMOR\" \"ECUADOR\" \"EGYPT\" \"EL_SALVADOR\" \"EQUATORIAL_GUINEA\" \"ERITREA\" \"ESTONIA\" \"ETHIOPIA\" \"FALKLAND_ISLANDS_MALVINAS\" \"FAEROE_ISLANDS\" \"FIJI\" \"FINLAND\" \"FRANCE\" \"FRANCE_METROPOLITAN\" \"FRENCH_GUIANA\" \"FRENCH_POLYNESIA\" \"FRENCH_SOUTHERN_TERRITORIES\" \"GABON\" \"GAMBIA\" \"GEORGIA\" \"GERMANY\" \"GHANA\" \"GIBRALTAR\" \"GREECE\" \"GREENLAND\" \"GRENADA\" \"GUADELOUPE\" \"GUAM\" \"GUATEMALA\" \"GUINEA\" \"GUINEA_BISSAU\" \"GUYANA\" \"HAITI\" \"HEARD_AND_MC_DONALD_ISLANDS\" \"VATICAN\" \"HONDURAS\" \"HONG_KONG\" \"HUNGARY\" \"ICELAND\" \"INDIA\" \"INDONESIA\" \"IRAN\" \"IRAQ\" \"IRELAND\" \"ISRAEL\" \"ITALY\" \"JAMAICA\" \"JAPAN\" \"JORDAN\" \"KAZAKHSTAN\" \"KENYA\" \"KIRIBATI\" \"KOREA_NORTH\" \"KOREA\" \"KOSOVO\" \"KUWAIT\" \"KYRGYZSTAN\" \"LAOS\" \"LATVIA\" \"LEBANON\" \"LESOTHO\" \"LIBERIA\" \"LIBYA\" \"LIECHTENSTEIN\" \"LITHUANIA\" \"LUXEMBOURG\" \"MACAU\" \"MACAULL\" \"MACEDONIA\" \"MADAGASCAR\" \"MALAWI\" \"MALAYSIA\" \"MALDIVES\" \"MALI\" \"MALTA\" \"MARSHALL_ISLANDS\" \"MARTINIQUE\" \"MAURITANIA\" \"MAURITIUS\" \"MAYOTTE\" \"MEXICO\" \"MICRONESIA_FEDERATED_STATES_OF\" \"MOLDOVA_REPUBLIC_OF\" \"MONACO\" \"MONGOLIA\" \"MONTENEGRO\" \"MONTSERRAT\" \"MOROCCO\" \"MOZAMIBIQUE\" \"MYANMAR_BURMA\" \"NAMIBIA\" \"NAURU\" \"NEPAL\" \"NETHERLANDS\" \"NETHERLANDS_ANTILLES\" \"NEW_CALEDONIA\" \"NEW_ZEALAND\" \"NICARAGUA\" \"NIGER\" \"NIGERIA\" \"NIUE\" \"NORFOLK_ISLAND\" \"NORTHERN_MARIANA_ISLANDS\" \"NORWAY\" \"OMAN\" \"PAKISTAN\" \"PALAU\" \"PANAMA\" \"PAPUA_NEW_GUINEA\" \"PARAGUAY\" \"PERU\" \"PHILIPPINES\" \"PITCAIRN\" \"POLAND\" \"PORTUGAL\" \"PUERTO_RICO\" \"QATAR\" \"REUNION\" \"ROMANIA\" \"RUSSIA\" \"RWANDA\" \"SAINT_KITTS_AND_NEVIS\" \"SAINT_LUCIA\" \"SAINT_MARTIN\" \"SAINT_VINCENT_AND_THE_GRENADINES\" \"SAMOA\" \"SAN_MARINO\" \"SAO_TOME_AND_PRINCIPE\" \"SAUDI_ARABIA\" \"SENEGAL\" \"SERBIA\" \"SERBIA_MONTENEGRO\" \"SEYCHELLES\" \"SIERRA_LEONE\" \"SINGAPORE\" \"SLOVAKIA\" \"SLOVENIA\" \"SOLOMON_ISLANDS\" \"SOMALIA\" \"SOUTH_AFRICA\" \"SOUTH_GEORGIA_AND_SOUTH_SS\" \"SOUTH_SUDAN\" \"SPAIN\" \"SRI_LANKA\" \"ST_HELENA\" \"ST_PIERRE_AND_MIQUELON\" \"SUDAN\" \"SURINAME\" \"SVALBARD_AND_JAN_MAYEN_ISLANDS\" \"SWAZILAND\" \"SWEDEN\" \"SWITZERLAND\" \"SYRIA\" \"TAIWAN\" \"TAJIKISTAN\" \"TANZANIA_UNITED_REPUBLIC_OF\" \"THAILAND\" \"TOGO\" \"TOKELAU\" \"TONGA\" \"TRINIDAD_AND_TOBAGO\" \"TUNISIA\" \"TURKEY\" \"TURKMENISTAN\" \"TURKS_AND_CAICOS_ISLANDS\" \"TUVALU\" \"UGANDA\" \"UKRAINE\" \"UAE\" \"UNITED_KINGDOM\" \"UNITED_STATES\" \"URUGUAY\" \"US_MINOR_ISLANDS\" \"UZBEKISTAN\" \"VANUATU\" \"VENEZUELA\" \"VIETNAM\" \"VIRGIN_ISLANDS_BRITISH\" \"VIRGIN_ISLANDS_US\" \"WALLIS_AND_FUTUNA_ISLANDS\" \"WESTERN_SAHARA\" \"YEMEN\" \"ZAMBIA\" \"ZIMBABWE\" \"DEBUG\" \"DEMO\"\nExample: country=UNITED_STATES\nFilter supported AP hardware platforms based on the country code. AP models that are not certified for this country are omitted from the response.",
+									"disabled": true
+								}
 							]
 						}
 					},
@@ -1148,6 +1156,48 @@
 					"response": []
 				},
 				{
+					"name": "Update the AFC compliance data for a list of access points",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"serialNumbers\": [\n\"...\",\n\"...\"\n],\n\"custId\": \"...\",\n\"id\": \"...\",\n\"canDelete\": true,\n\"canEdit\": true\n}"
+						},
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v1/aps/afcupdate",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v1",
+								"aps",
+								"afcupdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Assign a list of access points to a site and device group",
 					"request": {
 						"auth": {
@@ -1226,6 +1276,49 @@
 								"v1",
 								"aps",
 								"affinity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign a list of access points to a floor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"floorId\": \"{{floorId}}\",\n\"serialNumbers\": [\n\"{{apSerialNumber}}\",\n\"...\"\n]\n}"
+						},
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v1/aps/assign/floor",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v1",
+								"aps",
+								"assign",
+								"floor"
 							]
 						}
 					},
@@ -1714,6 +1807,136 @@
 									"key": "widgetList",
 									"value": "",
 									"description": "string",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get available widgets for the AP Smart RF report (/v2/aps/{apSerialNumber}/smartrf)",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v2/aps/smartrf/widgets",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v2",
+								"aps",
+								"smartrf",
+								"widgets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get AP Smart RF stats plus widgets data. (Use /v2/aps/smartrf/widgets to get the available widgets.)",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"duration\": \"D_14d\",\n\"widgets\": [\n{}\n],\n\"band\": \"Band5\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v2/aps/{{apSerialNumber}}/smartrf?duration=3H",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v2",
+								"aps",
+								"{{apSerialNumber}}",
+								"smartrf"
+							],
+							"query": [
+								{
+									"key": "duration",
+									"value": "3H",
+									"description": "string (Duration)\nEnum: \"D_3h\" \"D_3d\" \"D_14d\"\nReport duration"
+								},
+								{
+									"key": "widgetList",
+									"value": "",
+									"description": "string",
+									"disabled": true
+								},
+								{
+									"key": "band",
+									"value": null,
+									"description": "string (RadioBand)\nEnum: \"Band5\" \"Band6\" \"Band24\" \"BandNONE\"",
 									"disabled": true
 								}
 							]
@@ -2788,15 +3011,22 @@
 					"response": []
 				},
 				{
-					"name": "Get Smart RF reports for a given access point",
+					"name": "Get AP alarms list - Site",
 					"event": [
 						{
 							"listen": "prerequest",
 							"script": {
 								"exec": [
-									""
+									"//enter start and end times",
+									"var startTime = new Date(\"May 19, 2023 02:30:00\"); // Your timezone!",
+									"var endTime = new Date(\"May 20, 2023 12:30:00\"); // Your timezone!",
+									"",
+									"//Set in Environment",
+									"pm.environment.set(\"myStartTime\", startTime.getTime()); // myStartTime is used in Params of call - This is EPOCH time in milliseconds",
+									"pm.environment.set(\"myEndTime\", endTime.getTime()); // myEndTime is used in Params of call - This is EPOCH time in milliseconds"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -2820,7 +3050,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://{{controller}}:{{port}}/management/v1/aps/{{apSerialNumber}}/smartrf?duration=3H",
+							"raw": "https://{{controller}}:{{port}}/management/v1/aps/{{siteId}}/alarms?startTime={{myStartTime}}&endTime={{myEndTime}}&categories",
 							"protocol": "https",
 							"host": [
 								"{{controller}}"
@@ -2830,14 +3060,95 @@
 								"management",
 								"v1",
 								"aps",
-								"{{apSerialNumber}}",
+								"{{siteId}}",
+								"alarms"
+							],
+							"query": [
+								{
+									"key": "startTime",
+									"value": "{{myStartTime}}",
+									"description": "Start time in milliseconds"
+								},
+								{
+									"key": "endTime",
+									"value": "{{myEndTime}}",
+									"description": "End time in milliseconds"
+								},
+								{
+									"key": "categories",
+									"value": null,
+									"description": "string (ApAlarmCategory)\nEnum: \"Certificate\" \"ChannelChange\" \"ChannelUtilization\" \"ConfigurationChange\" \"ConfigurationFailure\" \"PollMonitor\" \"CrashReport\" \"ClientInfo\" \"Edge\" \"Ethernet\" \"Discovery\" \"DCS\" \"AlarmCleared\" \"Noise\" \"Radar\" \"Reboot\" \"Reset\" \"Upgrade\" \"Miscellaneous\" \"FabricAttach\" \"StatusChange\" \"SmartRF\" \"Unknown\"\nExample: categories=Certificate\nCategories list to retrieve. Returns all categories, if empty"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get site Smart RF stats plus widget data. (Use /v4/sites/smartrf/widgets to get available widgets)",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v4/sites/{{siteId}}/smartrf",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v4",
+								"sites",
+								"{{siteId}}",
 								"smartrf"
 							],
 							"query": [
 								{
 									"key": "duration",
 									"value": "3H",
-									"description": "string 3H|3D|14D\nDefault: \"3H\"\nExample: duration=3H"
+									"description": "string (Duration)\nEnum: \"D_3h\" \"D_3d\" \"D_14d\"\nReport duration",
+									"disabled": true
+								},
+								{
+									"key": "widgets",
+									"value": null,
+									"description": "Array of objects (WidgetInfoElement)",
+									"disabled": true
+								},
+								{
+									"key": "band",
+									"value": null,
+									"description": "string (RadioBand)\nEnum: \"Band5\" \"Band6\" \"Band24\" \"BandNONE\"",
+									"disabled": true
 								}
 							]
 						}
@@ -2956,6 +3267,125 @@
 								"v1",
 								"aps",
 								"aploglevel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve AFC related access point information",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v1/aps/afc/query",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v1",
+								"aps",
+								"afc",
+								"query"
+							],
+							"query": [
+								{
+									"key": "siteName",
+									"value": null,
+									"description": "A non-empty, valid site name",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Return the columns list for /v1/aps/afc/query",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v1/aps/afc/query/columns",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v1",
+								"aps",
+								"afc",
+								"query",
+								"columns"
+							],
+							"query": [
+								{
+									"key": "suggestValues",
+									"value": "",
+									"description": "boolean\nDefault: true\nScan for suggested values for columns.",
+									"disabled": true
+								}
 							]
 						}
 					},
@@ -3310,6 +3740,65 @@
 								"v1",
 								"concentrators",
 								"nametoidmap"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Onboard concentrator instance",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"serialNumber\": \"1730Y-1007800000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v1/concentrators/onboard",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v1",
+								"concentrators",
+								"onboard"
 							]
 						}
 					},
@@ -5811,6 +6300,569 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get the FCC AFC Server status with a site domain query option",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v1/state/afc/server",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v1",
+								"state",
+								"afc",
+								"server"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the FCC AFC Server status for all locations",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v1/state/afc/server/all",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v1",
+								"state",
+								"afc",
+								"server",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EslProfileManager",
+			"item": [
+				{
+					"name": "Get list of all ESL profiles",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v3/eslprofile",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v3",
+								"eslprofile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new ESL profile",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"custId\": null,\n  \"id\": \"6a87317e-687e-11ee-a487-000c29a71485\",\n  \"canDelete\": false,\n  \"canEdit\": true,\n  \"name\": \"ESL1\",\n  \"port\": 123,\n  \"fqdn\": \"www.testserv.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v3/eslprofile",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v3",
+								"eslprofile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ESL profile with default values",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v3/eslprofile",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v3",
+								"eslprofile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Esl profile name mapped to ID",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v3/eslprofile/nametoidmap",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v3",
+								"eslprofile",
+								"nametoidmap"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ESL profile by ID",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v3/eslprofile/{{eslProfileID}}",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v3",
+								"eslprofile",
+								"{{eslProfileID}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update an ESL profile",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"custId\": null,\n  \"id\": \"6a87317e-687e-11ee-a487-000c29a71485\",\n  \"canDelete\": false,\n  \"canEdit\": true,\n  \"name\": \"ESL1\",\n  \"port\": 123,\n  \"fqdn\": \"www.testserv.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v3/eslprofile/{{eslProfileID}}",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v3",
+								"eslprofile",
+								"{{eslProfileID}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete an ESL profile by ID",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v3/eslprofile/{{eslProfileID}}",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v3",
+								"eslprofile",
+								"{{eslProfileID}}"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -5883,7 +6935,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						},
 						{
@@ -5892,7 +6945,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -5907,7 +6961,7 @@
 								}
 							]
 						},
-						"method": "PUT",
+						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
@@ -5917,7 +6971,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"custId\": null,\n  \"id\": \"00000000-0000-0000-0000-000000000000\",\n  \"canDelete\": true,\n  \"canEdit\": true,\n  \"name\": \"\",\n  \"appId\": \"iBeaconAdvertisement\",\n  \"iBeaconAdvertisement\": {\n    \"interval\": 100,\n    \"major\": 0,\n    \"minor\": 0,\n    \"uuid\": \"00000000-0000-0000-0000-000000000000\",\n    \"measuredRssi\": -47\n  },\n  \"iBeaconScan\": {\n    \"destAddr\": \"0.0.0.0\",\n    \"destPort\": 0,\n    \"interval\": 100,\n    \"window\": 100,\n    \"minRSS\": -100,\n    \"uuid\": \"00000000-0000-0000-0000-000000000000\"\n  },\n  \"threadGateway\": {\n    \"shortPANId\": \"5964\",\n    \"extPANId\": \"726991727DD89911\",\n    \"masterKey\": \"F3AB92FDE5758495111177870437E1C3\",\n    \"networkName\": \"\",\n    \"commCredentials\": \"THREADNETWORK\",\n    \"channel\": 25,\n    \"whiteList\": []\n  },\n  \"eddystoneAdvertisement\": {\n    \"url\": \"\",\n    \"interval\": 100,\n    \"measuredRssi\": -5\n  },\n  \"eddystoneScan\": {\n    \"destAddr\": \"0.0.0.0\",\n    \"destPort\": 0,\n    \"interval\": 100,\n    \"window\": 100,\n    \"minRSS\": -100\n  },\n  \"genericScan\": {\n    \"destAddr\": \"8.8.8.8\",\n    \"destPort\": 12345,\n    \"interval\": 10240,\n    \"window\": 10240,\n    \"minRSS\": -60,\n    \"companyId\": 0\n  }\n}"
+							"raw": "{\n\"custId\": null,\n\"id\": \"00000000-0000-0000-0000-000000000000\",\n\"canDelete\": true,\n\"canEdit\": true,\n\"name\": \"\",\n\"appId\": \"iBeaconAdvertisement\",\n\"iBeaconAdvertisement\": {\n\"interval\": 100,\n\"major\": 0,\n\"minor\": 0,\n\"uuid\": \"00000000-0000-0000-0000-000000000000\",\n\"measuredRssi\": -47\n},\n\"iBeaconScan\": {\n\"destAddr\": \"0.0.0.0\",\n\"destPort\": 0,\n\"interval\": 100,\n\"window\": 100,\n\"minRSS\": -100,\n\"uuid\": \"00000000-0000-0000-0000-000000000000\"\n},\n\"threadGateway\": {\n\"shortPANId\": \"5964\",\n\"extPANId\": \"726991727DD89911\",\n\"masterKey\": \"F3AB92FDE5758495111177870437E1C3\",\n\"networkName\": \"\",\n\"commCredentials\": \"THREADNETWORK\",\n\"channel\": 25,\n\"whiteList\": [ ]\n},\n\"eddystoneAdvertisement\": {\n\"url\": \"\",\n\"interval\": 100,\n\"measuredRssi\": -5\n},\n\"eddystoneScan\": {\n\"destAddr\": \"0.0.0.0\",\n\"destPort\": 0,\n\"interval\": 100,\n\"window\": 100,\n\"minRSS\": -100\n},\n\"genericScan\": {\n\"destAddr\": \"8.8.8.8\",\n\"destPort\": 12345,\n\"interval\": 10240,\n\"window\": 10240,\n\"minRSS\": -60,\n\"companyId\": 0\n},\n\"app_supported\": \"SINGLE\"\n}"
 						},
 						"url": {
 							"raw": "https://{{controller}}:{{port}}/management/v3/iotprofile",
@@ -5944,7 +6998,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						},
 						{
@@ -5953,7 +7008,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -5988,6 +7044,14 @@
 								"v3",
 								"iotprofile",
 								"default"
+							],
+							"query": [
+								{
+									"key": "app_supported",
+									"value": null,
+									"description": "string (IotApplicationSupported)\nDefault: \"SINGLE\"\nEnum: \"SINGLE\" \"MULTI\"\nIf app_supported is present, response includes IoT profile with default values matching the app_supported (SINGLE or MULTI). If app_supported is not provided, then IoT profile of type SINGLE with default values are returned.",
+									"disabled": true
+								}
 							]
 						}
 					},
@@ -12984,6 +14048,145 @@
 					"response": []
 				},
 				{
+					"name": "Run the AFC query for the site",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"coordinates\": {\n      \"latitude\": 43.633868800000016,\n      \"longitude\": -79.6164096,\n      \"ts\": 1707223561000\n    },\n    \"elevation\": {\n      \"height\": 20,\n      \"heightReference\": \"Agl\",\n      \"uncertainty\": 2\n    },\n    \"ellipse\": {\n      \"minorAxis\": 12345,\n      \"majorAxis\": 12345,\n      \"orientation\": 12345\n    },\n    \"environment\": \"indoor\",\n    \"serial\": \"1730Y-1007800000\"\n  }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v3/sites/afcquery",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v3",
+								"sites",
+								"afcquery"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Run the AFC query for the site based on radius",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"radius\": 20,\n  \"coordinates\": {\n    \"latitude\": 43.633868800000016,\n    \"longitude\": -79.6164096,\n    \"source\": \"GPS\",\n    \"ts\": 1707223561000\n  },\n  \"height\": 1000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v3/sites/afcquery/default",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v3",
+								"sites",
+								"afcquery",
+								"default"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Get filtered list of all stations",
 					"event": [
 						{
@@ -13339,7 +14542,7 @@
 					"response": []
 				},
 				{
-					"name": "Get Site Smart RF report",
+					"name": "Get available widgets for the site SmartRF report (/v4/sites/{siteId}/smartrf)",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -13347,7 +14550,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						},
 						{
@@ -13356,7 +14560,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -13380,7 +14585,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://{{controller}}:{{port}}/management/v3/sites/{{siteId}}/smartrf?duration=3H",
+							"raw": "https://{{controller}}:{{port}}/management/v4/sites/smartrf/widgets",
 							"protocol": "https",
 							"host": [
 								"{{controller}}"
@@ -13388,16 +14593,17 @@
 							"port": "{{port}}",
 							"path": [
 								"management",
-								"v3",
+								"v4",
 								"sites",
-								"{{siteId}}",
-								"smartrf"
+								"smartrf",
+								"widgets"
 							],
 							"query": [
 								{
 									"key": "duration",
 									"value": "3H",
-									"description": "string 3H|3D|14D\nDefault: \"3H\"\nExample: duration=3H"
+									"description": "string3H|3D|14D\nDefault: \"3H\"\nExample: duration=3H",
+									"disabled": true
 								}
 							]
 						}
@@ -13542,6 +14748,70 @@
 									"value": "False",
 									"description": "boolean\nDefault: false"
 								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign role to client",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"role\": \"543e2fa5-dae3-497f-aa96-e06da8fcb379\",\n  \"mac\": \"string\"\n}"
+						},
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v1/stations/assignrole",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v1",
+								"stations",
+								"assignrole"
 							]
 						}
 					},
@@ -17605,6 +18875,255 @@
 								"bestpractices",
 								"{{bestPracticeId}}",
 								"accept"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GeolocationManager",
+			"item": [
+				{
+					"name": "Get list of geolocation subgraphs on the floor",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v1/geolocation/{{floorId}}/overview",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v1",
+								"geolocation",
+								"{{floorId}}",
+								"overview"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get summary of geolocation information per site",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v1/geolocation/floors/{{siteId}}",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v1",
+								"geolocation",
+								"floors",
+								"{{siteId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request AP-to-AP ranging for this floor",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v1/geolocation/{{floorId}}/range",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v1",
+								"geolocation",
+								"{{floorId}}",
+								"range"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request building the subgraphs and derivation of coordinates for this floor",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{controller}}:{{port}}/management/v1/geolocation/{{floorId}}/autolocate",
+							"protocol": "https",
+							"host": [
+								"{{controller}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"management",
+								"v1",
+								"geolocation",
+								"{{floorId}}",
+								"autolocate"
 							]
 						}
 					},
